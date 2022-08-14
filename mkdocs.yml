@@ -1,0 +1,13 @@
+site_name: raSCSI NATless wifi
+site_url: https://example.com/
+nav:
+    - Home: index.md
+    - Raspi OS Image: raspios.md
+    - Install rascsi: rascsi.md
+    - Mount hda image: hdaimage.md
+    - Systemd-networkd: sysdnetd.md
+    - Proxy_arp: proxyarp.md
+    - Rasci_bridge: rascsibridge.md
+    - Danport: danaport.md
+    - TCPip: tcpip.md
+    
