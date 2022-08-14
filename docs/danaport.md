@@ -1,5 +1,5 @@
 ## Mount Danaport
-using commandline
+using commandline.   For some reason attaching the Danaport through the web interface returns an error.
 #
 
     sudo rasctl -i 5 -c attach -t scdp -f eth0:192.168.3.0/24

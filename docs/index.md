@@ -1,5 +1,5 @@
-# raSCSI NATless wifi
-Tutorial for setting up raSCSI to connect over wifi but without having to implement NAT.
+# raSCSI NAT-less wifi
+Tutorial for setting up raSCSI to connect over wifi without requiring NAT
 
 For repository of these instructions see [github rascsiwifi](https://github.com/grkidwell/rascsiwifi)
 

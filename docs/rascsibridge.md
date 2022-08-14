@@ -1,4 +1,4 @@
-## Create Bridge systemd files
+## Create Systemd bridge files
 in /etc/systemd/network
 
 ### 10-rascsi_bridge.netdev

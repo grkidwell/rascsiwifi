@@ -1,4 +1,4 @@
-site_name: raSCSI NATless wifi
+site_name: raSCSI NAT-less wifi
 site_url: https://example.com/
 nav:
     - Home: index.md
@@ -6,8 +6,8 @@ nav:
     - Install rascsi: rascsi.md
     - Mount hda image: hdaimage.md
     - Systemd-networkd: sysdnetd.md
-    - Proxy_arp: proxyarp.md
-    - Rasci_bridge: rascsibridge.md
-    - Danport: danaport.md
-    - TCPip: tcpip.md
+    - Proxy Arp: proxyarp.md
+    - Rasci bridge: rascsibridge.md
+    - Danaport: danaport.md
+    - TCP/IP: tcpip.md
     
