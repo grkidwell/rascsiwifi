@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/tcpip/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/ref/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Tcpip - raSCSI NAT-less wifi</title>
+    <title>References - raSCSI NAT-less wifi</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Tcpip";
-        var mkdocs_page_input_path = "tcpip.md";
-        var mkdocs_page_url = "/tcpip/";
+        var mkdocs_page_name = "References";
+        var mkdocs_page_input_path = "ref.md";
+        var mkdocs_page_url = "/ref/";
       </script>
     
     <script src="../js/jquery-3.6.0.min.js" defer></script>
@@ -76,8 +76,16 @@
                 <li class="toctree-l1"><a class="reference internal" href="../macsw/">Mac software installs</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../ref/">References</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">References</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#rascsi">RaSCSI</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#maclibrarian">MacLibrarian</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#proxyarp">ProxyARP</a>
+    </li>
+    </ul>
                 </li>
               </ul>
       </div>
@@ -94,7 +102,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>Tcpip</li>
+      <li>References</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -103,17 +111,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="tcpip-config">TCP/IP Config</h2>
-<p>in the macintosh TCP/IP control panel</p>
-<h3 id="select-dhcp">Select DHCP</h3>
-<p><img alt="screenshot" src="../img/tcpip1.png" /></p>
-<h3 id="if-problems-getting-an-address-you-may-have-to-use-a-static-ip-make-sure-it-is-outside-your-routers-dhcp-range-1921683242-or-greater-should-work">If problems getting an address, you may have to use a static IP.  Make sure it is outside your router's DHCP range. 192.168.3.242 or greater should work</h3>
-<p><img alt="screenshot" src="../img/tcpip2.jpg" /></p>
-<h3 id="test-your-internet-connection-with-ott-tool-by-pinging-8888">Test your internet connection with OTT tool by pinging 8.8.8.8</h3>
-<p><img alt="screenshot" src="../img/tcpip3.jpg" /></p>
+                <h2 id="references">References</h2>
+<h3 id="rascsi">RaSCSI</h3>
+<p><a href="https://github.com/akuker/RASCSI/wiki">RaSCSI wiki</a></p>
+<p><a href="https://macintoshgarden.org/apps/rascsi-reloaded">hd image downloads</a></p>
+<h3 id="maclibrarian">MacLibrarian</h3>
+<p><a href="https://www.youtube.com/watch?v=-qRG-0Pne-I&amp;ab_channel=MacintoshLibrarian">RaSCSI youtube tutorial</a></p>
+<h3 id="proxyarp">ProxyARP</h3>
+<p><a href="https://raspberrypi.stackexchange.com/questions/88954/workaround-for-a-wifi-bridge-on-a-raspberry-pi-with-proxy-arp/88955#88955">wifi bridge - with subnetting</a></p>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../macsw/" class="btn btn-neutral float-left" title="Mac software installs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
 
   <hr/>
 
@@ -134,6 +145,8 @@
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+    
+      <span><a href="../macsw/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>

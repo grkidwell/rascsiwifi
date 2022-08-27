@@ -6,12 +6,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/danaport/</loc>
+         <loc>https://example.com/daynaport/</loc>
          <lastmod>2022-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/hdaimage/</loc>
+         <lastmod>2022-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/macsw/</loc>
          <lastmod>2022-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -32,6 +37,11 @@
     </url>
     <url>
          <loc>https://example.com/raspios/</loc>
+         <lastmod>2022-08-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/ref/</loc>
          <lastmod>2022-08-27</lastmod>
          <changefreq>daily</changefreq>
     </url>

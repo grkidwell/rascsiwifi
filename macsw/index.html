@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/tcpip/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/macsw/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Tcpip - raSCSI NAT-less wifi</title>
+    <title>Mac software installs - raSCSI NAT-less wifi</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Tcpip";
-        var mkdocs_page_input_path = "tcpip.md";
-        var mkdocs_page_url = "/tcpip/";
+        var mkdocs_page_name = "Mac software installs";
+        var mkdocs_page_input_path = "macsw.md";
+        var mkdocs_page_url = "/macsw/";
       </script>
     
     <script src="../js/jquery-3.6.0.min.js" defer></script>
@@ -72,8 +72,16 @@
                 <li class="toctree-l1"><a class="reference internal" href="../daynaport/">Daynaport</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../macsw/">Mac software installs</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Mac software installs</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#open-transport-and-daynaport-drivers">Open Transport and Daynaport drivers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ottool">OTTool</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tcpip-config">TCP/IP Config</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -94,7 +102,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>Tcpip</li>
+      <li>Mac software installs</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -103,17 +111,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="tcpip-config">TCP/IP Config</h2>
-<p>in the macintosh TCP/IP control panel</p>
-<h3 id="select-dhcp">Select DHCP</h3>
-<p><img alt="screenshot" src="../img/tcpip1.png" /></p>
-<h3 id="if-problems-getting-an-address-you-may-have-to-use-a-static-ip-make-sure-it-is-outside-your-routers-dhcp-range-1921683242-or-greater-should-work">If problems getting an address, you may have to use a static IP.  Make sure it is outside your router's DHCP range. 192.168.3.242 or greater should work</h3>
-<p><img alt="screenshot" src="../img/tcpip2.jpg" /></p>
-<h3 id="test-your-internet-connection-with-ott-tool-by-pinging-8888">Test your internet connection with OTT tool by pinging 8.8.8.8</h3>
-<p><img alt="screenshot" src="../img/tcpip3.jpg" /></p>
+                <h2 id="install-mac-software">Install Mac software</h2>
+<h3 id="open-transport-and-daynaport-drivers">Open Transport and Daynaport drivers</h3>
+<p><a href="https://www.youtube.com/watch?v=-qRG-0Pne-I&amp;t=720s">Mac Librarian video tutorial - Ethernet Adapter Setup</a></p>
+<p><a href="https://github.com/akuker/RASCSI/wiki/Dayna-Port-SCSI-Link#open-transport">RaSCSI wiki</a></p>
+<p><a href="https://macintoshgarden.org/apps/rascsi-reloaded">RaSCSI HD images</a></p>
+<h3 id="ottool">OTTool</h3>
+<p><a href="https://github.com/akuker/RASCSI/wiki/Dayna-Port-SCSI-Link#ottool">RaSCSI wiki</a></p>
+<h3 id="tcpip-config">TCP/IP Config</h3>
+<p>Is located in the macintosh TCP/IP control panel</p>
+<p>Select DHCP</p>
+<p><img alt="screenshot" src="../img/tcpip1.png" style="height:200px;width:300px" /></p>
+<p>If you run into problems getting an address, a static IP might be required.  Remember to use an address outside your router's DHCP range. 192.168.3.242 or greater should work</p>
+<p><img alt="screenshot" src="../img/tcpip2.jpg" style="height:200px;width:400px" /></p>
+<p>Test your internet connection with OTTool by pinging 8.8.8.8</p>
+<p><img alt="screenshot" src="../img/tcpip3.jpg" style="height:200px;width:400px" /></p>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../daynaport/" class="btn btn-neutral float-left" title="Daynaport"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ref/" class="btn btn-neutral float-right" title="References">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -135,6 +154,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../daynaport/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ref/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

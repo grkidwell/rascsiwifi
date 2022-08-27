@@ -51,6 +51,20 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Install rascsi</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1"></a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#perform-updates-and-add-libraries">Perform updates and add libraries</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#clone-the-rascsi-repository">Clone the rascsi repository</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#perform-easy-install-for-a-full-spec-board">Perform easy install for a Full Spec board</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#or-if-you-have-a-standard-board">Or, if you have a STANDARD board</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#choose-1-to-install-or-update-rascsi-service-web-interface">Choose "1" to install or update RaSCSI Service + Web Interface</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#restart-the-syslog-and-configure-systemd-to-start-rascsi-at-boot">Restart the syslog and configure systemd to start RaSCSI at boot</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -71,11 +85,15 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../danaport/">Danaport</a>
+                <li class="toctree-l1"><a class="reference internal" href="../daynaport/">Daynaport</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../tcpip/">TCP/IP</a>
+                <li class="toctree-l1"><a class="reference internal" href="../macsw/">Mac software installs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../ref/">References</a>
                 </li>
               </ul>
       </div>
@@ -101,10 +119,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="rascsi-install">raSCSI Install</h1>
-<h1 id="_1">&nbsp;</h1>
+                <h1 id="rascsi-install">RaSCSI Install</h1>
+<h3 id="_1"></h3>
 <p>Follow the RASCSI <a href="https://github.com/akuker/RASCSI/wiki/Setup-Instructions">setup instructions</a> 
-and ./easyinstall.sh </p>
+and ./easyinstall.sh.  The steps are copied below:</p>
 <h3 id="perform-updates-and-add-libraries">Perform updates and add libraries</h3>
 <pre><code>sudo apt-get update &amp;&amp; sudo apt-get install git libspdlog-dev protobuf-compiler libpcap-dev
 </code></pre>
@@ -112,7 +130,7 @@ and ./easyinstall.sh </p>
 <pre><code>cd ~  
 git clone https://github.com/akuker/RASCSI.git
 </code></pre>
-<h3 id="perform-easy-install-for-full-spec-board">Perform easy install for Full Spec board</h3>
+<h3 id="perform-easy-install-for-a-full-spec-board">Perform easy install for a Full Spec board</h3>
 <pre><code>cd ~/RASCSI
 ./easyinstall.sh
 </code></pre>
@@ -120,7 +138,7 @@ git clone https://github.com/akuker/RASCSI.git
 <pre><code>cd ~/RASCSI
 ./easyinstall.sh -c=STANDARD
 </code></pre>
-<h3 id="choose-1">Choose 1</h3>
+<h3 id="choose-1-to-install-or-update-rascsi-service-web-interface">Choose "1" to install or update RaSCSI Service + Web Interface</h3>
 <pre><code>Choose among the following options:
 INSTALL/UPDATE RASCSI (FULLSPEC version)
 1) install or update RaSCSI Service + Web Interface

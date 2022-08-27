@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/danaport/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://example.com/daynaport/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Danaport - raSCSI NAT-less wifi</title>
+    <title>Daynaport - raSCSI NAT-less wifi</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Danaport";
-        var mkdocs_page_input_path = "danaport.md";
-        var mkdocs_page_url = "/danaport/";
+        var mkdocs_page_name = "Daynaport";
+        var mkdocs_page_input_path = "daynaport.md";
+        var mkdocs_page_url = "/daynaport/";
       </script>
     
     <script src="../js/jquery-3.6.0.min.js" defer></script>
@@ -69,13 +69,17 @@
                 </li>
               </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Danaport</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Daynaport</a>
     <ul class="current">
     </ul>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../tcpip/">TCP/IP</a>
+                <li class="toctree-l1"><a class="reference internal" href="../macsw/">Mac software installs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../ref/">References</a>
                 </li>
               </ul>
       </div>
@@ -92,7 +96,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-      <li>Danaport</li>
+      <li>Daynaport</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -101,8 +105,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="mount-danaport">Mount Danaport</h2>
-<p>using commandline.   For some reason attaching the Danaport through the web interface returns an error.</p>
+                <h2 id="mount-daynaport">Mount Daynaport</h2>
+<p>These instructions were adapted from the <a href="https://github.com/akuker/RASCSI/wiki/Dayna-Port-SCSI-Link#open-transport">RaSCSI wiki</a></p>
+<p>Use the commandline since attaching the proxyARP-bridged Daynaport through the web interface returns an error.</p>
 <h1 id="_1"></h1>
 <pre><code>sudo rasctl -i 5 -c attach -t scdp -f eth0:192.168.3.0/24
 </code></pre>
@@ -162,12 +167,14 @@ bridge name         bridge id           STP enabled   interfaces
 rascsi_bridge       8000.36873c9d0b82   no             eth0
                                                        ras0
 </code></pre>
+<h3 id="dayna-scsilink-now-shows-up-in-the-web-interface">Dayna SCSI/Link now shows up in the web interface</h3>
+<p><img alt="screenshot" src="../img/dana1.png" /></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../rascsibridge/" class="btn btn-neutral float-left" title="Rasci bridge"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../tcpip/" class="btn btn-neutral float-right" title="TCP/IP">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../macsw/" class="btn btn-neutral float-right" title="Mac software installs">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -193,7 +200,7 @@ rascsi_bridge       8000.36873c9d0b82   no             eth0
       <span><a href="../rascsibridge/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../tcpip/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../macsw/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -47,8 +47,6 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Raspi OS Image</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#_1">&nbsp;</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#launch-raspi-config">Launch Raspi-Config</a>
     </li>
     </ul>
@@ -75,11 +73,15 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../danaport/">Danaport</a>
+                <li class="toctree-l1"><a class="reference internal" href="../daynaport/">Daynaport</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../tcpip/">TCP/IP</a>
+                <li class="toctree-l1"><a class="reference internal" href="../macsw/">Mac software installs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../ref/">References</a>
                 </li>
               </ul>
       </div>
@@ -106,63 +108,62 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="install-raspberry-pi-os-image">Install Raspberry PI OS image</h1>
-<p>on Raspberry Pi </p>
-<h2 id="_1">&nbsp;</h2>
+<p>on an SD card or USB flash drive </p>
 <p>Follow <a href="https://www.raspberrypi.com/documentation/computers/getting-started.html">Getting Started</a> instructions on official raspberrypi.com website</p>
 <p>Strongly recommend using the Raspberry PI Imager and selecting
 "Raspberry Pi OS Lite (32-bit)"</p>
-<p><img alt="Screenshot" src="../img/raspios1.png" /></p>
+<p><img alt="Screenshot" src="../img/raspios1.png" style="height:200px;width:300px" /></p>
 <p>select "Raspberry Pi OS (other)"</p>
-<p><img alt="Screenshot" src="../img/raspios2.png" /></p>
+<p><img alt="Screenshot" src="../img/raspios2.png" style="height:200px;width:300px" /></p>
 <p>select "Raspberry Pi OS Lite (32-bit)"</p>
-<p><img alt="Screenshot" src="../img/raspios3.png" /></p>
+<p><img alt="Screenshot" src="../img/raspios3.png" style="height:200px;width:300px" /></p>
 <h2 id="launch-raspi-config">Launch Raspi-Config</h2>
 <p>from raspberry pi terminal</p>
-<h1 id="_2"></h1>
+<h1 id="_1"></h1>
 <pre><code>pi@raspberrypi:~$ sudo raspi-config
 </code></pre>
-<p><img alt="Screenshot" src="../img/raspios4.png" /></p>
+<p><img alt="Screenshot" src="../img/raspios4.png" style="height:200px;width:300px" /></p>
 <h2 id="system-options">System Options</h2>
-<p>you may want to change Password and Hostname
-<img alt="Screenshot" src="../img/raspios5.png" /></p>
+<p>you may want to change Password and Hostname</p>
+<p><img alt="Screenshot" src="../img/raspios5.png" style="height:200px;width:300px" /></p>
 <h2 id="interface-options">Interface Options</h2>
-<p>enable SSH for remote access
-<img alt="Screenshot" src="../img/raspios6.png" /></p>
+<p>enable SSH for remote access</p>
+<p><img alt="Screenshot" src="../img/raspios6.png" style="height:200px;width:300px" /></p>
 <h2 id="localization-options">Localization Options</h2>
-<p><img alt="Screenshot" src="../img/raspios7.png" /></p>
-<h1 id="_3"></h1>
-<p>Under Locale, use spacebar to deselect "en_GB.UTF-8 UTF-8"
-<img alt="Screenshot" src="../img/raspios8.png" />
-and select "en_US.UTF-8 UTF-8 
-<img alt="Screenshot" src="../img/raspios9.png" />
-none
-<img alt="Screenshot" src="../img/raspios10.png" />
-Timezone
-<img alt="Screenshot" src="../img/raspios11.png" />
-US
-<img alt="Screenshot" src="../img/raspios12.png" />
-As we are favored enough to live in the The Republic of Texas
-<img alt="Screenshot" src="../img/raspios13.png" />
-Keyboard
-<img alt="Screenshot" src="../img/raspios14.png" />
-Generic 105-key PC (intl.)
-<img alt="Screenshot" src="../img/raspios15.png" />
-Other
-<img alt="Screenshot" src="../img/raspios16.png" />
-English (US)
-<img alt="Screenshot" src="../img/raspios17.png" />
-Scroll up to English (US)
-<img alt="Screenshot" src="../img/raspios18.png" />
-Default "Enter" the 2 screens then Finish
-<img alt="Screenshot" src="../img/raspios19.png" /></p>
+<p><img alt="Screenshot" src="../img/raspios7.png" style="height:200px;width:300px" /></p>
+<h1 id="_2"></h1>
+<p>Under Locale, use spacebar to deselect "en_GB.UTF-8 UTF-8"</p>
+<p><img alt="Screenshot" src="../img/raspios8.png" style="height:200px;width:300px" /></p>
+<p>and select "en_US.UTF-8 UTF-8 </p>
+<p><img alt="Screenshot" src="../img/raspios9.png" style="height:200px;width:300px" /></p>
+<p>none</p>
+<p><img alt="Screenshot" src="../img/raspios10.png" style="height:200px;width:300px" /></p>
+<p>Timezone</p>
+<p><img alt="Screenshot" src="../img/raspios11.png" style="height:200px;width:300px" /></p>
+<p>US</p>
+<p><img alt="Screenshot" src="../img/raspios12.png" style="height:200px;width:300px" /></p>
+<p>As we are favored enough to live in the The Republic of Texas</p>
+<p><img alt="Screenshot" src="../img/raspios13.png" style="height:200px;width:300px" /></p>
+<p>Keyboard</p>
+<p><img alt="Screenshot" src="../img/raspios14.png" style="height:200px;width:300px" /></p>
+<p>Generic 105-key PC (intl.)</p>
+<p><img alt="Screenshot" src="../img/raspios15.png" style="height:200px;width:300px" /></p>
+<p>Other</p>
+<p><img alt="Screenshot" src="../img/raspios16.png" style="height:200px;width:300px" /></p>
+<p>English (US)</p>
+<p><img alt="Screenshot" src="../img/raspios17.png" style="height:200px;width:300px" /></p>
+<p>Scroll up to English (US)</p>
+<p><img alt="Screenshot" src="../img/raspios18.png" style="height:200px;width:300px" /></p>
+<p>Default "Enter" the 2 screens then Finish</p>
+<p><img alt="Screenshot" src="../img/raspios19.png" style="height:200px;width:300px" /></p>
 <h2 id="remote-ssh-login">Remote ssh login</h2>
 <p>from PC terminal you can now remote login to your rascsi</p>
-<h2 id="_4"></h2>
+<h2 id="_3"></h2>
 <pre><code>alex@xanadu_pc:~$ ssh pi@rascsi.local
 pi@rascsi:~$
 </code></pre>
 <h2 id="update-and-upgrade">Update and Upgrade</h2>
-<h2 id="_5"></h2>
+<h2 id="_4"></h2>
 <pre><code>sudo apt update
 sudo apt upgrade
 </code></pre>
