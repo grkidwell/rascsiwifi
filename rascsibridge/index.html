@@ -100,11 +100,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="2"><a href="#reboot-raspberry-pi" class="nav-link">Reboot raspberry pi</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
         </ul>
     </div>
 </div></div>
@@ -118,6 +113,7 @@ Name=rascsi_bridge
 Kind=bridge
 </code></pre>
 <h3 id="11-rascsi_bridgenetwork">11-rascsi_bridge.network</h3>
+<p>This will also bridge the ethernet port to rascsi_bridge and will provide an ip address to a client</p>
 <pre><code>[Match]
 Name=eth0
 
@@ -125,7 +121,7 @@ Name=eth0
 [Network]
 Bridge=rascsi_bridge
 </code></pre>
-<h2 id="reboot-raspberry-pi">Reboot raspberry pi</h2></div>
+<h3 id="reboot-raspberry-pi">Reboot raspberry pi</h3></div>
             </div>
         </div>
 

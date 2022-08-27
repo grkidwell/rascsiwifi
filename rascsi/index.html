@@ -113,7 +113,51 @@
 <h1 id="rascsi-install">raSCSI Install</h1>
 <h1 id="_1">&nbsp;</h1>
 <p>Follow the RASCSI <a href="https://github.com/akuker/RASCSI/wiki/Setup-Instructions">setup instructions</a> 
-and ./easyinstall.sh </p></div>
+and ./easyinstall.sh </p>
+<h3 id="perform-updates-and-add-libraries">Perform updates and add libraries</h3>
+<pre><code>sudo apt-get update &amp;&amp; sudo apt-get install git libspdlog-dev protobuf-compiler libpcap-dev
+</code></pre>
+<h3 id="clone-the-rascsi-repository">Clone the rascsi repository</h3>
+<pre><code>cd ~  
+git clone https://github.com/akuker/RASCSI.git
+</code></pre>
+<h3 id="perform-easy-install-for-full-spec-board">Perform easy install for Full Spec board</h3>
+<pre><code>cd ~/RASCSI
+./easyinstall.sh
+</code></pre>
+<h3 id="or-if-you-have-a-standard-board">Or, if you have a <strong>STANDARD</strong> board</h3>
+<pre><code>cd ~/RASCSI
+./easyinstall.sh -c=STANDARD
+</code></pre>
+<h3 id="choose-1">Choose 1</h3>
+<pre><code>Choose among the following options:
+INSTALL/UPDATE RASCSI (FULLSPEC version)
+1) install or update RaSCSI Service + Web Interface
+2) install or update RaSCSI Service
+3) install or update RaSCSI OLED Screen (requires hardware)
+CREATE HFS FORMATTED (MAC) IMAGE WITH LIDO DRIVERS
+** For the Mac Plus, it's better to create an image through the Web Interface **
+4) 600MB drive (suggested size)
+5) custom drive size (up to 4000MB)
+NETWORK BRIDGE ASSISTANT
+6) configure network bridge for Ethernet (DHCP)
+7) configure network bridge for WiFi (static IP + NAT)
+INSTALL COMPANION APPS
+8) install AppleShare File Server (Netatalk)
+9) install Web Proxy Server (Macproxy)
+ADVANCED OPTIONS
+10) compile and install RaSCSI stand-alone
+11) configure the RaSCSI Web Interface stand-alone
+EXPERIMENTAL FEATURES
+12) install or update RaSCSI Control Board UI (requires hardware)
+Enter your choice (0-12) or CTRL-C to exit: 1
+</code></pre>
+<h3 id="restart-the-syslog-and-configure-systemd-to-start-rascsi-at-boot">Restart the syslog and configure systemd to start RaSCSI at boot</h3>
+<pre><code>sudo systemctl restart rsyslog
+sudo systemctl enable rascsi # optional - start rascsi at boot
+sudo systemctl start rascsi
+sudo systemctl status rascsi
+</code></pre></div>
             </div>
         </div>
 

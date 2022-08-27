@@ -105,11 +105,6 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-level="1"><a href="#verify-configrascsidefaultjson-file" class="nav-link">Verify ~/.config/rascsi/default.json file</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
         </ul>
     </div>
 </div></div>
@@ -120,7 +115,7 @@
 <h1 id="_1"></h1>
 <pre><code>sudo rasctl -i 5 -c attach -t scdp -f eth0:192.168.3.0/24
 </code></pre>
-<h1 id="verify-configrascsidefaultjson-file">Verify ~/.config/rascsi/default.json file</h1>
+<h3 id="verify-configrascsidefaultjson-file">Verify ~/.config/rascsi/default.json file</h3>
 <pre><code>{
     "version": "22.7.2",
     "devices": [
@@ -159,6 +154,22 @@
         }
     ]
 }
+</code></pre>
+<h3 id="confirm-ras0-bridge-is-present-will-show-up-as-degraded-and-unmanaged-but-actually-works">Confirm ras0 bridge is present.  Will show up as 'degraded' and 'unmanaged' but actually works</h3>
+<pre><code>networkctl
+
+IDX LINK          TYPE     OPERATIONAL      SETUP
+1 lo            loopback carrier          unmanaged
+2 eth0          ether    no-carrier       configuring
+3 rascsi_bridge bridge   degraded-carrier configured 
+4 wlan0         wlan     routable         configured 
+6 ras0          ether    degraded         unmanaged
+
+brctl show
+
+bridge name         bridge id           STP enabled   interfaces
+rascsi_bridge       8000.36873c9d0b82   no             eth0
+                                                       ras0
 </code></pre></div>
             </div>
         </div>

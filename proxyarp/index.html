@@ -116,7 +116,56 @@
                     <div class="col-md-9" role="main">
 
 <h2 id="setup-proxy-arp-with-subnetting">Setup Proxy ARP with Subnetting</h2>
-<p><a href="https://raspberrypi.stackexchange.com/questions/88954/workaround-for-a-wifi-bridge-on-a-raspberry-pi-with-proxy-arp/88955#88955">go to website</a></p>
+<p>below instructions were modified from this <a href="https://raspberrypi.stackexchange.com/questions/88954/workaround-for-a-wifi-bridge-on-a-raspberry-pi-with-proxy-arp/88955#88955">website</a></p>
+<h3 id="configure-the-wifi-client-connection">Configure the WiFi client connection</h3>
+<p>Create this file for wpa_supplicant with your settings for <code>country=</code>, <code>ssid=</code> and <code>psk=</code>:</p>
+<pre><code>sudo -Es    # if not already done
+cat &gt; /etc/wpa_supplicant/wpa_supplicant-wlan0.conf &lt;&lt;EOF
+
+country=US
+ctrl_interface=DIR=/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="TestNet"
+    psk="testingPassword"
+}
+EOF
+
+chmod 600 /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
+systemctl disable wpa_supplicant.service
+systemctl enable wpa_supplicant@wlan0.service
+rfkill unblock 0
+</code></pre>
+<h3 id="enable-promiscuous-mode-on-wlan0-to-see-broadcasts-on-both-subnets">Enable promiscuous mode on wlan0 to see broadcasts on both subnets.</h3>
+<pre><code>sudo systemctl edit wpa_supplicant@wlan0.service
+
+### Editing /etc/systemd/system/wpa_supplicant@wlan0.service.d/override.conf
+### Anything between here and the comment below will become the new contents of the file
+
+[Service]
+ExecStartPre=/sbin/ip link set %i promisc on
+ExecStopPost=/sbin/ip link set %i promisc off
+
+### Lines below this comment will be discarded
+
+### /lib/systemd/system/wpa_supplicant@.service
+# [Unit]
+# Description=WPA supplicant daemon (interface-specific version)
+# Requires=sys-subsystem-net-devices-%i.device
+# After=sys-subsystem-net-devices-%i.device
+# Before=network.target
+# Wants=network.target
+# 
+# # NetworkManager users will probably want the dbus version instead.
+# 
+# [Service]
+# Type=simple
+# ExecStart=/sbin/wpa_supplicant -c/etc/wpa_supplicant/wpa_supplicant-%I.conf -Dnl80211,wext -i%I
+# 
+# [Install]
+# Alias=multi-user.target.wants/wpa_supplicant@%i.service
+</code></pre>
 <h2 id="edit-files-in-etcsystemdnetwork-directory">Edit files in /etc/systemd/network directory</h2>
 <h1 id="_1"></h1>
 <h3 id="for-04-wirednetwork">For 04-wired.network</h3>
