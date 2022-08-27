@@ -10,6 +10,9 @@ nav:
     - Systemd-networkd: sysdnetd.md
     - Proxy Arp: proxyarp.md
     - Rasci bridge: rascsibridge.md
-    - Danaport: danaport.md
-    - TCP/IP: tcpip.md
+    - Daynaport: daynaport.md
+    - Mac software installs: macsw.md
+    - References: ref.md
     
+markdown_extensions:
+  - attr_list

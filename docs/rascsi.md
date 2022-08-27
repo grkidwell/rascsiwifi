@@ -1,8 +1,8 @@
-# raSCSI Install
-# &nbsp;
+# RaSCSI Install
+###
 
 Follow the RASCSI [setup instructions](https://github.com/akuker/RASCSI/wiki/Setup-Instructions) 
-and ./easyinstall.sh 
+and ./easyinstall.sh.  The steps are copied below:
 
 ### Perform updates and add libraries
 
@@ -13,7 +13,7 @@ and ./easyinstall.sh
     cd ~  
     git clone https://github.com/akuker/RASCSI.git  
 
-### Perform easy install for Full Spec board
+### Perform easy install for a Full Spec board
 
     cd ~/RASCSI
     ./easyinstall.sh
@@ -23,7 +23,7 @@ and ./easyinstall.sh
     cd ~/RASCSI
     ./easyinstall.sh -c=STANDARD
 
-### Choose 1
+### Choose "1" to install or update RaSCSI Service + Web Interface
 
     Choose among the following options:
     INSTALL/UPDATE RASCSI (FULLSPEC version)

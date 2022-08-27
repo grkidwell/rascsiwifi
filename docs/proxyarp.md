@@ -1,6 +1,6 @@
 ## Setup Proxy ARP with Subnetting
 
-below instructions were modified from this [website](https://raspberrypi.stackexchange.com/questions/88954/workaround-for-a-wifi-bridge-on-a-raspberry-pi-with-proxy-arp/88955#88955)
+The below instructions were modified from this [website](https://raspberrypi.stackexchange.com/questions/88954/workaround-for-a-wifi-bridge-on-a-raspberry-pi-with-proxy-arp/88955#88955)
 
 ### Configure the WiFi client connection
 

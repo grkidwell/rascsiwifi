@@ -1,5 +1,8 @@
-## Mount Danaport
-using commandline.   For some reason attaching the Danaport through the web interface returns an error.
+## Mount Daynaport
+
+These instructions were adapted from the [RaSCSI wiki](https://github.com/akuker/RASCSI/wiki/Dayna-Port-SCSI-Link#open-transport)
+
+Use the commandline since attaching the proxyARP-bridged Daynaport through the web interface returns an error.
 #
 
     sudo rasctl -i 5 -c attach -t scdp -f eth0:192.168.3.0/24
@@ -62,3 +65,6 @@ using commandline.   For some reason attaching the Danaport through the web inte
     bridge name	        bridge id		    STP enabled	  interfaces
     rascsi_bridge		8000.36873c9d0b82	no		       eth0
                                                            ras0
+
+### Dayna SCSI/Link now shows up in the web interface
+![screenshot](img/dana1.png)

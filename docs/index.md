@@ -1,7 +1,7 @@
-# raSCSI NAT-less wifi
+# RaSCSI with NAT-less wifi
 Tutorial for setting up raSCSI to connect over wifi without requiring NAT
 
-For repository of these instructions see [github rascsiwifi](https://github.com/grkidwell/rascsiwifi)
+The repository for these instructions is located at [github rascsiwifi](https://github.com/grkidwell/rascsiwifi)
 
 
 # Steps
@@ -11,7 +11,7 @@ For repository of these instructions see [github rascsiwifi](https://github.com/
 
 2. Install rascsi with easyinstall instructions
 
-3. Use the web interface to install and mount *.hda drive image
+3. Use the web interface to install and mount *.hda drive images
 
 4. Switch over to systemd-networkd for general networking
 
@@ -19,9 +19,11 @@ For repository of these instructions see [github rascsiwifi](https://github.com/
 
 6. Create rasci_bridge files in /etc/systemd/network directory
 
-7. Mount Danaport thru commandline
+7. Mount the Daynaport SCSI/LINK via the commandline
 
-8. On the mac, config TCP/IP control panel
+8. On the mac, install software and configure the TCP/IP control panel
+
+9. References
 
 
 
