@@ -1,5 +1,7 @@
 site_name: raSCSI NAT-less wifi
 site_url: https://example.com/
+theme:
+    name: readthedocs
 nav:
     - Home: index.md
     - Raspi OS Image: raspios.md
