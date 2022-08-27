@@ -5,7 +5,7 @@ using commandline.   For some reason attaching the Danaport through the web inte
     sudo rasctl -i 5 -c attach -t scdp -f eth0:192.168.3.0/24
 
 
-# Verify ~/.config/rascsi/default.json file
+### Verify ~/.config/rascsi/default.json file
 
     {
         "version": "22.7.2",
@@ -46,3 +46,19 @@ using commandline.   For some reason attaching the Danaport through the web inte
         ]
     }
 
+### Confirm ras0 bridge is present.  Will show up as 'degraded' and 'unmanaged' but actually works
+
+    networkctl
+
+    IDX LINK          TYPE     OPERATIONAL      SETUP
+    1 lo            loopback carrier          unmanaged
+    2 eth0          ether    no-carrier       configuring
+    3 rascsi_bridge bridge   degraded-carrier configured 
+    4 wlan0         wlan     routable         configured 
+    6 ras0          ether    degraded         unmanaged
+
+    brctl show
+
+    bridge name	        bridge id		    STP enabled	  interfaces
+    rascsi_bridge		8000.36873c9d0b82	no		       eth0
+                                                           ras0

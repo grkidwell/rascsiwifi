@@ -7,6 +7,8 @@ in /etc/systemd/network
     Kind=bridge
 
 ### 11-rascsi_bridge.network
+This will also bridge the ethernet port to rascsi_bridge and will provide an ip address to a client
+
     [Match]
     Name=eth0
 
@@ -15,4 +17,4 @@ in /etc/systemd/network
     Bridge=rascsi_bridge
 
 
-##  Reboot raspberry pi
+###  Reboot raspberry pi
